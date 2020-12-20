@@ -11,3 +11,11 @@ git status
 >        learn-git.txt
 >nothing added to commit but untracked files present (use "git add" to track)
 
+git add learn-git.txt
+git status
+>Changes to be committed:
+>  (use "git rm --cached <file>..." to unstage)
+>        new file:   learn-git.txt
+
+Commiting with message flag "-m" and  a message in quotes.
+git commit -m "Commit message"
