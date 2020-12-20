@@ -27,6 +27,8 @@ git log
 >
 >    Commit message
 
-git add . - add all changed to commit.
+git add . - add all changes to commit.
 
+return to some of the previous versions:
+git checkout 221fe65d42585dc806186b3058e469b2a0e34d93
 
