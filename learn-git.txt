@@ -32,3 +32,10 @@ git add . - add all changes to commit.
 return to some of the previous versions:
 git checkout 221fe65d42585dc806186b3058e469b2a0e34d93
 
+git branch - list the branches
+>* (HEAD detached from 221fe65)
+>  master
+
+git checkout master - go to master branch.
+
+
