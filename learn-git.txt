@@ -19,3 +19,14 @@ git status
 
 Commiting with message flag "-m" and  a message in quotes.
 git commit -m "Commit message"
+
+git log
+>commit 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99 (HEAD -> master)
+>Author: gundars-o <gundars.ozolins75@gmail.com>
+>Date:   Sun Dec 20 20:19:46 2020 +0200
+>
+>    Commit message
+
+git add . - add all changed to commit.
+
+
