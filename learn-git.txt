@@ -27,6 +27,5 @@ git log
 >
 >    Commit message
 
-git add . - add all changed to commit.
-
+git add . - add all changes to commit.
 
