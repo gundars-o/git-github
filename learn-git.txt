@@ -49,3 +49,12 @@ git checkout crazycolors
 
 Marge changes to master branch:
 git merge crazycolors
+
+GITHUB:
+Get the list of remotes that I have:
+git remote -v
+
+Set up remote versions:
+
+
+Load changes from local GIT version to remote GITHUB version:
