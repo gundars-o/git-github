@@ -1,4 +1,4 @@
-dir - list all files and folder of active folder.
+dir - list all files and folders of active folder.
 
 git init - initializes a repository for the active folder to use a GIT to track the changes in this folder.
 >.git folder created in active folder.
@@ -28,12 +28,9 @@ git log
 >    Commit message
 
 git add . - add all changes to commit.
-<<<<<<< HEAD
-=======
 
 return to some of the previous versions:
 git checkout 221fe65d42585dc806186b3058e469b2a0e34d93
->>>>>>> crazycolors
 
 git branch - list the branches
 >* (HEAD detached from 221fe65)
@@ -55,6 +52,61 @@ Get the list of remotes that I have:
 git remote -v
 
 Set up remote versions:
-
+git remote add origin https://github.com/gundars-o/typing.git
 
 Load changes from local GIT version to remote GITHUB version:
+git push -u origin master
+
+"origin" in "push" must match the "origin" in "remote".
+"origin" is the url. "master" is the branch.
+
+A different branch can be pushed up:
+git push -u origin github-learning
+
+The full command only first time needed:
+git push -u origin github-learning
+Later it can be done only using:
+git push
+
+Create a new branch and switch to it:
+git checkout -b relaxing
+
+How to contribute to projects of other GITHUB user?
+1. this other user need to give a permission: Manage access - Invite a collaborator
+2. Fork in project of other user, clone forked (automatically get as remote repository), commit changes, push to forked branch, Create pull request. Then this other user can see this pull request, open it, check deletions and addings, and then 
+under Review changes button choose Approve. After pressing Submit review button press Merge pull request and Confirm merge. Now the owner of the project can pull merged branch (git pull origin master) to use it on its computer.
+
+git commit can contain two messages. The second message is for description box.
+git checkout - start writing and Tab for autocomplete (on my VSCode it doesn't work). Even can start to type some of the last words that will be unique.
+
+Show differences:
+git diff
+
+"-u" is the same as "--set-upstream"  in "git push"
+
+git branch -d github-learning
+
+Shorthand:
+git commit -am "commit message"
+"a" stands for add
+Works only for modified files - not newly created files.
+
+Merge conflicts must be resolved manually. And then commit again.
+
+Undo staging (only "git add" processed):
+git reset
+or
+git reset <name of the file>
+Now these files are no longer staged (only modified).
+
+Undo commit:
+git reset HEAD~1
+"HEAD" means the last commit.
+
+Scroll commits with spacebar.
+
+Undo and unstage (code still present in files):
+git reset 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
+
+Undo and remove completely (also from files):
+git reset --hard 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
