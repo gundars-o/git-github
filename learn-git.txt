@@ -1,4 +1,4 @@
-dir - list all files and folder of active folder.
+dir - list all files and folders of active folder.
 
 git init - initializes a repository for the active folder to use a GIT to track the changes in this folder.
 >.git folder created in active folder.
@@ -28,12 +28,9 @@ git log
 >    Commit message
 
 git add . - add all changes to commit.
-<<<<<<< HEAD
-=======
 
 return to some of the previous versions:
 git checkout 221fe65d42585dc806186b3058e469b2a0e34d93
->>>>>>> crazycolors
 
 git branch - list the branches
 >* (HEAD detached from 221fe65)
@@ -86,3 +83,30 @@ Show differences:
 git diff
 
 "-u" is the same as "--set-upstream"  in "git push"
+
+git branch -d github-learning
+
+Shorthand:
+git commit -am "commit message"
+"a" stands for add
+Works only for modified files - not newly created files.
+
+Merge conflicts must be resolved manually. And then commit again.
+
+Undo staging (only "git add" processed):
+git reset
+or
+git reset <name of the file>
+Now these files are no longer staged (only modified).
+
+Undo commit:
+git reset HEAD~1
+"HEAD" means the last commit.
+
+Scroll commits with spacebar.
+
+Undo and unstage (code still present in files):
+git reset 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
+
+Undo and remove completely (also from files):
+git reset --hard 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
