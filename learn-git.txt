@@ -113,3 +113,31 @@ git reset --hard 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
 
 Visual history:
 gitk
+
+SUMMARY:
+git init
+git status
+git add learn-git.txt
+git add .
+git commit -m "Commit message" -m "Description"
+git log
+git checkout 221fe65d42585dc806186b3058e469b2a0e34d93
+git branch
+git checkout master
+git branch crazycolors
+git checkout crazycolors
+git merge crazycolors
+git remote -v
+git remote add origin https://github.com/gundars-o/typing.git
+git push -u origin master
+git push
+git checkout -b relaxing
+git diff
+git branch -d github-learning
+git reset
+git reset <name of the file>
+git reset HEAD~1
+git reset 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
+git reset --hard 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
+gitk
+
