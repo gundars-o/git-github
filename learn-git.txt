@@ -38,4 +38,11 @@ git branch - list the branches
 
 git checkout master - go to master branch.
 
+Make a new branch:
+git branch crazycolors
 
+Switch to other branch:
+git checkout crazycolors
+
+Marge changes to master branch:
+git merge crazycolors
