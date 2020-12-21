@@ -61,6 +61,10 @@ Load changes from local GIT version to remote GITHUB version:
 git push -u origin master
 
 "origin" in "push" must match the "origin" in "remote".
+"origin" is the url. "master" is the branch.
 
 A different branch can be pushed up:
 git push -u origin github-learning
+
+Create a new branch and switch to it:
+git checkout -b relaxing
