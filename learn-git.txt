@@ -55,6 +55,12 @@ Get the list of remotes that I have:
 git remote -v
 
 Set up remote versions:
-
+git remote add origin https://github.com/gundars-o/typing.git
 
 Load changes from local GIT version to remote GITHUB version:
+git push -u origin master
+
+"origin" in "push" must match the "origin" in "remote".
+
+A different branch can be pushed up:
+git push -u origin github-learning
