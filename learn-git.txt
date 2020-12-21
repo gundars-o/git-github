@@ -66,5 +66,21 @@ git push -u origin master
 A different branch can be pushed up:
 git push -u origin github-learning
 
+The full command only first time needed:
+git push -u origin github-learning
+Later it can be done only using:
+git push
+
 Create a new branch and switch to it:
 git checkout -b relaxing
+
+How to contribute to projects of other GITHUB user?
+1. this other user need to give a permission: Manage access - Invite a collaborator
+2. Fork in project of other user, clone forked (automatically get as remote repository), commit changes, push to forked branch, Create pull request. Then this other user can see this pull request, open it, check deletions and addings, and then 
+under Review changes button choose Approve. After pressing Submit review button press Merge pull request and Confirm merge. Now the owner of the project can pull merged branch (git pull origin master) to use it on its computer.
+
+git commit can contain two messages. The second message is for description box.
+git checkout - start writing and Tab for autocomplete (on my VSCode it doesn't work). Even can start to type some of the last words that will be unique.
+
+Show differences:
+git diff
