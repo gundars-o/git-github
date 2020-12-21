@@ -84,3 +84,5 @@ git checkout - start writing and Tab for autocomplete (on my VSCode it doesn't w
 
 Show differences:
 git diff
+
+"-u" is the same as "--set-upstream"  in "git push"
