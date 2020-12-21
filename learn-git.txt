@@ -110,3 +110,6 @@ git reset 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
 
 Undo and remove completely (also from files):
 git reset --hard 2025a94fe63f5a1ca07c64885b8b44ec47d8fe99
+
+Visual history:
+gitk
